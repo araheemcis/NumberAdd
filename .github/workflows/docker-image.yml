@@ -30,5 +30,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          push: ${{ github.event_name != 'pull_request' }}
+          push: true
+          tags: |
+              "${{ github_repository }}:${{ github_ref_name }}"
           tags: araheemcis/numberadd:v1.2.0
