@@ -32,5 +32,5 @@ jobs:
           context: .
           push: true
           tags: |
-              "${{ github_repository }}:${{ github_ref_name }}"
+              "${{ github.repository }}:${{ github.ref_name }}"
           tags: araheemcis/numberadd:v1.2.0
