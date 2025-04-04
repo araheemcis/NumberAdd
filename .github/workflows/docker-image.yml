@@ -31,4 +31,4 @@ jobs:
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
-          tags: v1.2.0
+          tags: araheemcis/numberadd:v1.2.0
