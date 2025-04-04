@@ -10,8 +10,9 @@ def index():
  #    num2 = int(request.form['num2'])
      number1 = request.args.get("number1", "")
      number2 = request.args.get("number2", "")
+     number3 = request.args.get("number3", :")
  
-     result = addnumber(number1,number2)
+     result = addnumber(number1,number2,number3)
     except ValueError:
             result = "Invalid input. Please enter numbers only."
 
