@@ -33,4 +33,4 @@ jobs:
           push: true
           tags: |
               "${{ github.repository }}:${{ github.ref_name }}"
-          tags: araheemcis/numberadd:v1.2.0
+          
